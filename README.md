@@ -17,6 +17,9 @@
 	Go to OpenAI API Keys page and log in.
     Click "Create new secret key"
 	
+**API URL**
+	http://127.0.0.1:8000/docs#/
+	
 ## Quick Start (Development)
 
 1. Create a virtual environment and install deps:
@@ -24,9 +27,7 @@
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
 .venv\Scripts\activate
-
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
-http://127.0.0.1:8000/docs#/
+
