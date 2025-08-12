@@ -40,11 +40,12 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 # API I/O format
 
 **Upload API**
-1. On Swagger Tryout the Upload api
-2. Select any pdf, docx, txt, images, csv, sqlite or .db file and execute.
-3. On a successful upload API will show Chunk size.
+- On Swagger Tryout the Upload api
+- Select any pdf, docx, txt, images, csv, sqlite or .db file and execute.
+- On a successful upload API will show Chunk size.
+
 **Query API**
-1. After Uploading the file send your Query under question.
-2. set image _base64 value to "", if you have no image attached with your query.
+- After Uploading the file send your Query under question.
+- set image _base64 value to "", if you have no image attached with your query.
 
 - On Success OpneAPI should provide the respose.
