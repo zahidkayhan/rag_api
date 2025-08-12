@@ -16,9 +16,7 @@
 **Set your OpenAI Api Key in .env File.**
 	Go to OpenAI API Keys page and log in.
     Click "Create new secret key"
-	
-**API URL**
-	http://127.0.0.1:8000/docs#/
+	Copy and paster the key on .env file replacing XXXXX, OPENAI_API_KEY=YOUR_APIKEY
 	
 ## Quick Start (Development)
 
@@ -27,7 +25,26 @@
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
+2. Run API on a Virtual Environment
+```bash
 .venv\Scripts\activate
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+## Local Host API Endpoint
 
+**API URL**
+	http://127.0.0.1:8000/docs#/
+	
 
+# API I/O format
+
+**Upload API**
+1. On Swagger Tryout the Upload api
+2. Select any pdf, docx, txt, images, csv, sqlite or .db file and execute.
+3. On a successful upload API will show Chunk size.
+**Query API**
+1. After Uploading the file send your Query under question.
+2. set image _base64 value to "", if you have no image attached with your query.
+
+- On Success OpneAPI should provide the respose.
